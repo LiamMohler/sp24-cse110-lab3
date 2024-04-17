@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting Minutes">
+    <title>Sample Team Meeting Minutes</title>
+    <link rel="icon" href="images/favicon-32x32.png">
+</head>
+<body>
+
+<div class ="main-container">
+    <main>
+        <span class ="header-container">
+            <header>
+                <h1>Sample Team Meeting Minutes</h1>
+            </header>
+        </span>
+
+        <section>
+            <h2>Brainstorming</h2>
+            <h3>Date: 4/16/2024</h3>
+            
+            <h3>Attendance</h3>
+            <ul>
+                <li><em>Timmy</em></li>
+                <li><em>Gerold</em></li>
+                <li><em>Johnson</em></li>
+            </ul>
+
+            <h3>Today's Agenda</h3>
+            <ol>
+                <li><strong>Review X</strong></li>
+                <li>Discuss Y</li>
+                <li>Assign Z</li>
+            </ol>
+
+            <h3>Unfinished Business</h3>
+            <p>Finished everything <b>last</b> meeting.</p>
+
+            <h3>New Business</h3>
+            <details>
+                <summary>Discussion on X, Y, and Z.</summary>
+                <p>X, Y, and Z <b>must</b> be completed asap.</p>
+            </details>
+
+            <h3>Miscellaneous</h3>
+            <nav>
+                <p>
+                    <i><a href="https://docs.oracle.com/en/java/">Here</a></i> is some <b>useful</b> documentation.
+                    <br>
+                    No other miscellaneous information.
+                </p>
+            </nav>
+
+            <h3>Diagrams</h3>
+            <img src="images/money.jpg" alt="Meeting Diagram">
+
+            <h3>Audio Recording</h3>
+            <audio controls>
+                <source src="images/mixkit-small-crowd-laugh-and-applause-422.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Recording</h3>
+            <video controls>
+                <source src="images/mixkit-mother-and-baby-monkey-in-the-forest-11033-medium.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+</div>
+<div class ="footer-container">
+    <footer>
+        <p>Author: Liam Mohler</p>
+    </footer>
+</div>
+
+<div class = "form">
+    <form>
+
+        <fieldset>
+            <legend>Feedback Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="genders">Gender:</label>
+            <select name="genders" id="genders">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br>
+            <label for="fav-food">Choose your favorite food from the list:</label>
+            <input list="fav-food" name="food" id="food">
+            <datalist id="fav-food">
+            <option value="Taco">
+            <option value="Burrito">
+            <option value="Tamale">
+            </datalist>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
