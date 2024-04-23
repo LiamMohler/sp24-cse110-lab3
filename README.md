@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://liammohler.github.io/Lab2_Starter/
+# Lab 3
+LiamMohler.github.io/sp24-cse110-lab3
