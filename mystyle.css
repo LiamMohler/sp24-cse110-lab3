@@ -1,0 +1,110 @@
+/* General CSS Topics - Color Adjustments with Comments */
+:root {
+  /* Color variables with fallback */
+  --primary-color: rgb(0, 128, 0); /* Dark green */
+  --secondary-color: #FF6347; /* Tomato red */
+  --bg-color: hsl(210, 60%, 95%); /* Soft blue-gray */
+}
+
+body {
+  background-color: var(--bg-color, #ADD8E6); /* Light blue-gray with fallback */
+  color: #333; /* Dark gray text color */
+  font-family: 'Roboto', sans-serif; /* Google Font */
+}
+
+header {
+  background-color: var(--primary-color); /* Dark green */
+  color: white;
+}
+
+/* Comment: Footer with sticky positioning */
+.footer-container {
+  background-color: gray; /* Gray background for footer */
+  position: sticky; 
+  top: 100vh;
+}
+
+/* Text styling with decoration */
+p {
+  text-decoration: underline; /* Underline text */
+  color: var(--secondary-color); /* Tomato red text color */
+}
+
+h1 {
+  text-align: center; /* Centered text */
+}
+
+/* Display Properties */
+.main-container {
+  display: flex; /* Flex layout */
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+/* Position Property Adjustments */
+.header-title {
+  border: 2px solid #333; /* Border with solid style */
+  border-radius: 5px; /* Border-radius for rounded corners */
+}
+
+button {
+  background-color: var(--primary-color); /* Dark green */
+}
+
+button:active {
+  background-color: var(--secondary-color); /* Active state */
+}
+
+/* Pseudo-classes */
+a:hover {
+  color: var(--secondary-color); /* Tomato red on hover */
+}
+
+button:active {
+  background-color: var(--secondary-color); /* Background color when active */
+}
+
+/* Flexbox with Children Attributes */
+.main-container {
+  flex-direction: column; /* Flex direction */
+}
+
+.form {
+  grid-template-columns: repeat(2, 1fr); /* Grid with 2 columns */
+  justify-content: center; /* Centered elements */
+}
+
+/* Responsiveness with Media Queries */
+@media (max-width: 600px) {
+  .main-container {
+    flex-direction: row; /* Adjusted flex direction */
+  }
+
+  .form {
+    grid-template-columns: repeat(1, 1fr); /* Adjusted grid for smaller screens */
+  }
+}
+
+/* CSS Selectors with Combinators and Attribute Selector */
+#footer {
+  color: #333; /* Dark gray text color */
+}
+
+a[href^="https"] {
+  color: green; /* Attribute selector with specific color */
+}
+
+.section nav {
+  font-style: italic; /* Nested selector with combinators */
+}
+
+/* New Selector with :has() */
+section:has(nav) {
+  border: 1px dashed black; /* Dashed border */
+}

@@ -1,3 +1,4 @@
+<!-- HTML File (index.html) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,26 +6,27 @@
     <meta name="description" content="Meeting Minutes">
     <title>Sample Team Meeting Minutes</title>
     <link rel="icon" href="images/favicon-32x32.png">
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
 
-<div class ="main-container">
+<div class="main-container">
     <main>
         <header>
-            <h1><span class = "header-title">Sample Team Meeting Minutes</span></h1>
+            <h1 class="header-title">Sample Team Meeting Minutes</h1>
         </header>
 
         <section>
             <h2>Brainstorming</h2>
             <h3>Date: 4/16/2024</h3>
-            
             <h3>Attendance</h3>
             <ul>
                 <li><em>Timmy</em></li>
                 <li><em>Gerold</em></li>
                 <li><em>Johnson</em></li>
             </ul>
-
+            
             <h3>Today's Agenda</h3>
             <ol>
                 <li><strong>Review X</strong></li>
@@ -51,7 +53,7 @@
             </nav>
 
             <h3>Diagrams</h3>
-            <img src="images/money.jpg" alt="Meeting Diagram">
+            <img src="images/money.jpg" alt="Meeting Diagram" class="diagram-img">
 
             <h3>Audio Recording</h3>
             <audio controls>
@@ -67,13 +69,13 @@
         </section>
     </main>
 </div>
-<div class ="footer-container">
-    <footer>
+<div class="footer-container">
+    <footer id="footer">
         <p>Author: Liam Mohler</p>
     </footer>
 </div>
 
-<div class = "form">
+<div class="form">
     <form>
 
         <fieldset>
@@ -95,9 +97,9 @@
             <label for="food">Choose your favorite food from the list:</label>
             <input list="favfood" name="food" id="food">
             <datalist id="favfood">
-            <option value="Taco">
-            <option value="Burrito">
-            <option value="Tamale">
+                <option value="Taco">
+                <option value="Burrito">
+                <option value="Tamale">
             </datalist>
             <button type="submit">Submit</button>
         </fieldset>
